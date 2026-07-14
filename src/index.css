@@ -8,7 +8,12 @@
 
 @layer base {
   html {
-    overflow: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
   }
 
   body {
@@ -16,7 +21,6 @@
     min-width: 320px;
     min-height: 100vh;
     font-family: var(--font-sans);
-    overflow: hidden;
   }
 
   * {
@@ -170,4 +174,10 @@
 @keyframes spin-slow {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .comic-contact {
+    padding: 1rem !important;
+  }
 }
