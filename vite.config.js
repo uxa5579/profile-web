@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/oprek/',
+  base: '/profile-web/',
   plugins: [react(), tailwindcss()],
 })
